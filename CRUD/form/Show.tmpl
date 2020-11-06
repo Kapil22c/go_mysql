@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{ define "Show" }}
   {{ template "Header" }}
     {{ template "Menu"  }}
@@ -5,4 +6,13 @@
       <p>Name: {{ .Name }}</p>
       <p>City:  {{ .City }}</p><br /> <a href="/edit?id={{ .Id }}">Edit</a></p>
   {{ template "Footer" }}
+=======
+{{ define "Show" }}
+  {{ template "Header" }}
+    {{ template "Menu"  }}
+    <h2> Register {{ .Id }} </h2>
+      <p>Name: {{ .Name }}</p>
+      <p>City:  {{ .City }}</p><br /> <a href="/edit?id={{ .Id }}">Edit</a></p>
+  {{ template "Footer" }}
+>>>>>>> d6da71bf4e7f24699f47f6d52bdd143ce91841d3
 {{ end }}
