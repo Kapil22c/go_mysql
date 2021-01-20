@@ -1,0 +1,14 @@
+{{ define "Edit" }}
+  {{ template "Header" }}
+    {{ template "Menu" }} 
+   <br /><h2>Edit Name, Country, Role, Age</h2>  <br />
+    <form method="POST" action="update">
+      <input type="hidden" name="uid" value="{{ .Id }}" />
+      <span class = "label label-default"> Name </span><input class="form-control" type="text" name="name" value="{{ .Name }}"  /><br />
+      <span class = "label label-default"> Country </span><input class="form-control" type="text" name="country" value="{{ .Country }}"  /><br />
+      <span class = "label label-default"> Role </span><input class="form-control" type="text" name="role" value="{{ .Role }}"  /><br />
+      <span class = "label label-default"> Age </span><input class="form-control" type="text" name="age" value="{{ .Age }}"  /><br />
+      <input class="btn btn-primary" type="submit" value="Save" />
+    </form><br />    
+  {{ template "Footer" }}
+{{ end }}

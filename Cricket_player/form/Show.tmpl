@@ -3,6 +3,8 @@
     {{ template "Menu"  }}
     <h2> Register {{ .Id }} </h2>
       <p>Name: {{ .Name }}</p>
-      <p>City:  {{ .City }}</p><br /> <a class="btn btn-primary" href="/edit?id={{ .Id }}">Edit</a></p>
+      <p>Country:  {{ .Country }}</p>
+      <p>Role:  {{ .Role }}</p>
+      <p>Age:  {{ .Age }}</p><br /> <a class="btn btn-primary" href="/edit?id={{ .Id }}">Edit</a></p>
   {{ template "Footer" }}
 {{ end }}
